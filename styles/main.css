@@ -34,8 +34,9 @@
 
 .project {
   border-radius: 8px;
-  max-width: 306px;
+  max-width: 307px;
   background-color: var(--gray-300);
+  border: 1px solid var(--gray-300);
 
   h1 {
     font: var(--title-sm);
