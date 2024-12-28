@@ -22,6 +22,7 @@ footer {
   justify-content: center;
   flex-direction: column;
   gap: 8px;
+  text-align: center;
 
   span:first-child {
     font: var(--subtitle);
@@ -47,7 +48,8 @@ footer {
   gap: 16px;
 
   a {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 68px;
     display: flex;
     justify-content: space-between;

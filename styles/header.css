@@ -53,11 +53,27 @@
     font: var(--text-sm);
     color: var(--gray-400);
     margin-top: 20px;
+    max-width: 680px;
   }
 
   .arrow {
-    margin-top: 94px;
     width: 32px;
+    margin-bottom: 57px;
+  }
+
+  @media (max-width: 461px) {
+    h2 {
+      font: var(--text-sm);
+      font-size: 13px;
+    }
+
+    h1 {
+      font: var(--title-md);
+    }
+
+    .subtitle {
+      font: var(--text-xsm);
+    }
   }
 }
 
@@ -65,7 +81,7 @@
   display: grid;
   grid-template-columns: 1fr 0.8fr 0.8fr 1.2fr 0.9fr 1fr;
   gap: 16px;
-  margin-top: 80px;
+  padding-block: 80px 94px;
 
   img {
     width: 24px;
@@ -73,6 +89,10 @@
 
   @media (max-width: 785px) {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (max-width: 464px) {
+    grid-template-columns: 1fr 1fr;
   }
 }
 

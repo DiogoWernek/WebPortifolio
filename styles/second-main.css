@@ -5,6 +5,7 @@
   align-items: center;
   background-color: var(--gray-100);
   padding-block: 88px 120px;
+  border-radius: 1rem;
 }
 
 .second-main-titles {
@@ -12,6 +13,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
+  gap: 8px;
 
   h2{
     font: var(--subtitle);
@@ -22,13 +25,29 @@
     font: var(--title-md);
     color: var(--gray-600);
   }
+
+  @media (max-width: 407px) {
+    h2{
+      font-size: 18px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  }
 }
 
 .cards-business {
   display: flex;
+  padding: 1rem;
   gap: 24px;
   width: 100%;
   justify-content: center;
+
+  @media (max-width: 901px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .business {

@@ -34,8 +34,10 @@
 
   --text-md: 400 16px/140% var(--font-family-M);
   --text-sm: 400 14px/140% var(--font-family-M);
+  --text-xsm: 400 12px/140% var(--font-family-M);
 }
 
 body {
   background-color: #16181D;
+  padding-inline: 1rem;
 }
