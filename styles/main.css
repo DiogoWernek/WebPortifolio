@@ -1,23 +1,24 @@
 .header-main {
-  display: flex;
-  justify-content: center;
-  gap: 56px;
-  flex-direction: column;
-  align-items: center;
   padding-block: 0 144px;
+  
+  gap: 56px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .main-titles {
-  margin-top: 72px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  margin-top: 72px;
   text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 
   h2{
-    font: var(--subtitle);
     color: var(--red);
+    font: var(--subtitle);
   }
 
   h1 {
@@ -40,12 +41,13 @@
 }
 
 .projects {
-  max-width: 1366px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-  gap: 24px;
   padding: 1rem;
+  max-width: 1366px;
+  
+  gap: 24px;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
 
   @media (max-width: 734px) {
     grid-template-columns: 1fr 1fr;
@@ -57,34 +59,39 @@
 }
 
 .project {
-  border-radius: 8px;
   max-width: 307px;
+  
+  border-radius: 8px;
   background-color: var(--gray-300);
   border: 1px solid var(--gray-300);
 
   h1 {
+    padding-inline: 16px;
+    
+    margin-top: 8px;
+  
     font: var(--title-sm);
     color: var(--gray-600);
-    margin-top: 8px;
-    padding-inline: 16px;
   }
 
   p {
-    font: var(--text-sm);
-    color: var(--gray-500);
     padding-inline: 16px;
     padding-block: 8px 21px;
+    
+    font: var(--text-sm);
+    color: var(--gray-500);
   }
 }
 
 .project img {
   width: 100%;
-  border-radius: 16px;
   padding: 12px;
+  
   object-fit: cover;
+  border-radius: 16px;
 }
 
 .project:hover {
-  border: 1px solid var(--gray-600);
   cursor: pointer;
+  border: 1px solid var(--gray-600);
 }

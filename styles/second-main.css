@@ -1,24 +1,26 @@
 .second-main {
-  display: flex;
-  flex-direction: column;
-  gap: 56px;
-  align-items: center;
-  background-color: var(--gray-100);
   padding-block: 88px 120px;
+  
+  gap: 56px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
   border-radius: 1rem;
+  background-color: var(--gray-100);
 }
 
 .second-main-titles {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
   gap: 8px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 
   h2{
-    font: var(--subtitle);
     color: var(--red);
+    font: var(--subtitle);
   }
 
   h1 {
@@ -38,42 +40,46 @@
 }
 
 .cards-business {
-  display: flex;
-  padding: 1rem;
-  gap: 24px;
   width: 100%;
+  padding: 1rem;
+  
+  gap: 24px;
+  display: flex;
   justify-content: center;
 
   @media (max-width: 901px) {
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
   }
 }
 
 .business {
-  flex-direction: column;
-  display: flex;
   width: 100%;
   max-width: 280px;
+  
+  display: flex;
   padding: 20px;
-  border: 1px solid var(--gray-200);
+  flex-direction: column;
+  
   border-radius: 12px;
+  border: 1px solid var(--gray-200);
 
   img {
     width: 48px;
+    
     margin-bottom: 20px;
   }
 
 }
 
 .descriptions {
-  max-width: 240px;
   width: 100%;
+  max-width: 240px;
   
   h1 {
+    margin-bottom: 8px;
     font: var(--title-sm);
     color: var(--gray-600);
-    margin-bottom: 8px;
   }
 
   p {
@@ -83,5 +89,6 @@
 }
 
 .business:hover {
+  cursor: pointer;
   border: 1px solid var(--gray-600);
 }

@@ -1,15 +1,16 @@
 footer {
-  background-image: url(../assets/Backgrounds/Background_Contacts.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  max-height: 787px;
   width: 100%;
-  padding-block: 128px 200px;
-  display: flex;
-  flex-direction: column;
+  height: 100%;
+  
   gap: 48px;
+  display: flex;
+  max-height: 787px;
+  background-size: cover;
+  flex-direction: column;
+  padding-block: 128px 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/Backgrounds/Background_Contacts.png);
 
   @media (max-width: 1370px) {
     background-size: 1366px;
@@ -17,16 +18,16 @@ footer {
 }
 
 .footer-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   gap: 8px;
+  display: flex;
   text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 
   span:first-child {
-    font: var(--subtitle);
     color: var(--purple);
+    font: var(--subtitle);
   }
 
   span:last-child {
@@ -41,26 +42,28 @@ footer {
 }
 
 .footer-container {
+  gap: 16px;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 16px;
+  justify-content: center;
 
   a {
     width: 100%;
-    max-width: 400px;
     height: 68px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--gray-300);
-    border-radius: 8px;
+    max-width: 400px;
     padding-inline: 24px 20px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    border-radius: 8px;
+    font: var(--text-md);
     text-decoration: none;
     color: var(--gray-500);
-    font: var(--text-md);
     border: 2px solid transparent;
+    background-color: var(--gray-300);
         
 
 
@@ -70,10 +73,10 @@ footer {
     }
 
     div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       gap: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       i:first-child {
         font-size: 28px;

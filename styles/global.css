@@ -21,9 +21,9 @@
   --gray-500: #C0C4CE;
   --gray-600: #E2E4E9;
 
-  --font-family-I: 'Inconsolata', sans-serif;
   --font-family-A: 'Asap', sans-serif;
   --font-family-M: 'Maven Pro', sans-serif;
+  --font-family-I: 'Inconsolata', sans-serif;
 
   --title-lg: 800 56px/120% var(--font-family-A);
   --title-md: 800 24px/120% var(--font-family-A);
