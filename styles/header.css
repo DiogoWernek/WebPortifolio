@@ -69,8 +69,8 @@
 
   @media (max-width: 461px) {
     h2 {
-      font-size: 13px;
       font: var(--text-sm);
+      font-size: 13px;
     }
 
     h1 {
