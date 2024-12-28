@@ -7,8 +7,12 @@
   height: 750px;
   background-image: url("../assets/Backgrounds/Background_Intro.png");
   background-repeat: no-repeat;
-  background-size: 1366px;
+  background-size: cover;
   background-position: center;
+
+  @media (max-width: 1370px) {
+    background-size: 1366px;
+  }
 }
 
 .container {
